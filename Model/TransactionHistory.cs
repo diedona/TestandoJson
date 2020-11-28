@@ -13,5 +13,6 @@ namespace Model
         public int Quantity { get; set; }
         public decimal ActualCost { get; set; }
         public DateTime ModifiedDate { get; set; }
+        public bool TemQuantidadeMaiorQue1 => Quantity > 1;
     }
 }
